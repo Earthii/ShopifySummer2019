@@ -1,0 +1,39 @@
+.container{
+    height:100%;
+    .header{
+        background-image: linear-gradient(to right, #184482, #21884B);
+        height:15%;
+        display:flex;
+        .title{
+            margin:auto;
+            font-size:36px;
+            color:white;
+        }
+    }
+    .content{
+        height:85%;
+        .top{
+            display:flex;
+            flex-direction:column;
+            height:60%;
+            .search{
+                padding:15px 0 15px 0;
+            }
+            .result{
+                overflow-y: auto;
+            }
+        }
+        .bottom{
+            height:40%;
+            overflow-y: auto;
+            background-color:rgb(245,255,248);
+            .title{
+                font-size:32px;
+                color: #218a4a;
+                font-weight:900;
+                padding-left: 15px;
+                padding-top:15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.fav-table-container{
+    height:100%;
+    table{
+        padding:0 15px 0 15px;
+        width:100%;
+        .fa-star{
+            color: #9A9A9A;
+        }
+        .remove-star{
+            color: #218A4A;
+        }
+        tr{
+            td:first-child{
+                width:3%;
+                i{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .no-results{
+        text-align:center;
+    }
+}

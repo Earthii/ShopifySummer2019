@@ -1,0 +1,10 @@
+<div class="search-box-container">
+  <div class="input">
+    <input type="text" placeholder="Search For Keyword" (keyup)="keyup($event)" #keywords>
+  </div>
+  <div class="button">
+    <div (click)="search(keywords.value)">
+      <i class="fas fa-search"></i>  
+    </div>
+  </div>
+</div>

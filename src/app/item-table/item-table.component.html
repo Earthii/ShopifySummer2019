@@ -1,0 +1,17 @@
+<div class="fav-table-container">
+  <table>
+    <tr *ngFor="let item of items">  
+        <td>
+          <i class="fas fa-star" (click)="save(item)" *ngIf="!item.alreadyFav; else removeFavStar"></i>
+          <ng-template #removeFavStar>
+            <i class="fas fa-star remove-star" (click)="removeFav(item)"></i>
+          </ng-template>
+        </td>
+        <td>{{item.title}}</td>
+        <td [innerHTML]="toHTML(item.body)"></td>
+    </tr>
+  </table>
+  <div *ngIf="items.length === 0" class="no-results">
+    <span>No Search Results</span>
+  </div>
+</div>
