@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class Database {
-  baseUrl = 'https://shopifysummer2019db.herokuapp.com';
+  baseUrl = 'https://shopifysummer2019.appspot.com';
   constructor(private http: HttpClient) {}
 
   getAll() {
